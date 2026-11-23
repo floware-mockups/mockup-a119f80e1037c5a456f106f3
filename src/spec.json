@@ -1,0 +1,178 @@
+{
+  "title": "Scadenze delle sentenze stradali",
+  "description": "Gestione delle sentenze con condanna alle spese legali: registra pubblicazione e notifica, calcola il termine applicabile e aggiunge 120 giorni alla scadenza risultante.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Quadro scadenze",
+      "description": "Riepilogo delle sentenze registrate e dei pagamenti da pianificare.",
+      "metrics": [
+        {
+          "label": "Sentenze registrate",
+          "value": "18"
+        },
+        {
+          "label": "Da pagare entro 30 giorni",
+          "value": "4"
+        },
+        {
+          "label": "Termine semestrale",
+          "value": "9"
+        },
+        {
+          "label": "Scadenze entro 120 giorni",
+          "value": "5"
+        }
+      ],
+      "columns": [
+        "Riferimento sentenza",
+        "Violazione",
+        "Organizzazione",
+        "Pubblicazione",
+        "Notifica",
+        "Importo spese",
+        "Scadenza pagamento"
+      ],
+      "rows": [
+        [
+          "S-24-001",
+          "Sosta vietata",
+          "Comune di Lumo",
+          "2025-01-12",
+          "Notificata 2025-02-03",
+          "€ 420,00",
+          "2025-07-03"
+        ],
+        [
+          "S-24-002",
+          "Accesso non autorizzato",
+          "Distretto di Vela",
+          "2025-02-18",
+          "Non notificata",
+          "€ 315,00",
+          "2025-12-18"
+        ],
+        [
+          "S-24-003",
+          "Eccesso di velocità",
+          "Unione Nubi",
+          "2025-03-06",
+          "Notificata 2025-03-20",
+          "€ 510,00",
+          "2025-07-18"
+        ],
+        [
+          "S-24-004",
+          "Sosta vietata",
+          "Comune di Lumo",
+          "2025-04-22",
+          "Non notificata",
+          "€ 280,00",
+          "2026-02-19"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "sentenze",
+      "title": "Registro sentenze",
+      "description": "Consulta e filtra le sentenze. La scadenza è calcolata usando 30 giorni dalla notifica oppure 6 mesi dalla pubblicazione, con ulteriori 120 giorni aggiunti a entrambi i termini.",
+      "metrics": [],
+      "columns": [
+        "Riferimento sentenza",
+        "Violazione",
+        "Organizzazione",
+        "Data pubblicazione",
+        "Data notifica",
+        "Importo spese",
+        "Data pagamento",
+        "Scadenza calcolata"
+      ],
+      "rows": [
+        [
+          "S-24-001",
+          "Sosta vietata",
+          "Comune di Lumo",
+          "2025-01-12",
+          "2025-02-03",
+          "€ 420,00",
+          "Non registrato",
+          "2025-07-03"
+        ],
+        [
+          "S-24-002",
+          "Accesso non autorizzato",
+          "Distretto di Vela",
+          "2025-02-18",
+          "Non notificata",
+          "€ 315,00",
+          "Non registrato",
+          "2025-12-18"
+        ],
+        [
+          "S-24-003",
+          "Eccesso di velocità",
+          "Unione Nubi",
+          "2025-03-06",
+          "2025-03-20",
+          "€ 510,00",
+          "2025-06-28",
+          "2025-07-18"
+        ],
+        [
+          "S-24-004",
+          "Sosta vietata",
+          "Comune di Lumo",
+          "2025-04-22",
+          "Non notificata",
+          "€ 280,00",
+          "Non registrato",
+          "2026-02-19"
+        ],
+        [
+          "S-24-005",
+          "Sosta su area riservata",
+          "Distretto di Vela",
+          "2025-05-15",
+          "2025-05-28",
+          "€ 390,00",
+          "Non registrato",
+          "2025-09-25"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "nuova-sentenza",
+      "title": "Registra sentenza",
+      "description": "Inserisci i dati essenziali. Se la sentenza non è notificata, lascia vuota la data di notifica; il termine sarà calcolato dalla pubblicazione.",
+      "metrics": [],
+      "columns": [
+        "Riferimento sentenza",
+        "Violazione",
+        "Organizzazione",
+        "Data pubblicazione",
+        "Data notifica",
+        "Importo spese",
+        "Data pagamento",
+        "Scadenza calcolata"
+      ],
+      "rows": [],
+      "form": [
+        "Riferimento sentenza",
+        "Violazione",
+        "Organizzazione",
+        "Data pubblicazione",
+        "Data notifica",
+        "Importo spese",
+        "Data pagamento",
+        "Scadenza calcolata"
+      ]
+    }
+  ],
+  "theme": {
+    "palette": "blu-istituzionale",
+    "fonts": "istituzionale"
+  }
+}
