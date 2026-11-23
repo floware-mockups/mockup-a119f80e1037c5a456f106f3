@@ -241,6 +241,13 @@
       "events": [
         "add"
       ]
+    },
+    {
+      "name": "FiltroScadenzeCondiviso",
+      "title": "Sentenze entro il termine",
+      "description": "Filtro condiviso tra Quadro scadenze e Registro sentenze, con risultati letti dal registro senza modificare i dati.",
+      "role": "section",
+      "position": "top"
     }
   ]
 }
