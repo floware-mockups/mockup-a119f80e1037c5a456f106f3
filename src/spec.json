@@ -139,6 +139,56 @@
           "€ 390,00",
           "Non registrato",
           "2025-09-25"
+        ],
+        [
+          "S-25-006",
+          "Sosta vietata",
+          "Comune di Lumo",
+          "2025-06-10",
+          "2025-06-24",
+          "€ 365,00",
+          "Non registrato",
+          "2025-10-22"
+        ],
+        [
+          "S-25-007",
+          "Accesso non autorizzato",
+          "Distretto di Vela",
+          "2025-07-08",
+          "Non notificata",
+          "€ 440,00",
+          "Non registrato",
+          "2026-11-08"
+        ],
+        [
+          "S-25-008",
+          "Eccesso di velocità",
+          "Unione Nubi",
+          "2025-08-14",
+          "2025-08-29",
+          "€ 525,00",
+          "Non registrato",
+          "2026-01-26"
+        ],
+        [
+          "S-25-009",
+          "Sosta su area riservata",
+          "Comune di Lumo",
+          "2025-09-03",
+          "Non notificata",
+          "€ 295,00",
+          "Non registrato",
+          "2026-12-31"
+        ],
+        [
+          "S-25-010",
+          "Sosta vietata",
+          "Distretto di Vela",
+          "2025-10-06",
+          "2025-10-21",
+          "€ 410,00",
+          "Non registrato",
+          "2026-02-18"
         ]
       ],
       "form": []
@@ -166,13 +216,31 @@
         "Data pubblicazione",
         "Data notifica",
         "Importo spese",
-        "Data pagamento",
-        "Scadenza calcolata"
+        "Data pagamento"
       ]
     }
   ],
   "theme": {
     "palette": "blu-istituzionale",
     "fonts": "istituzionale"
-  }
+  },
+  "custom": [
+    {
+      "name": "CalcoloScadenzeSentenze",
+      "title": "Calcolo automatico delle scadenze",
+      "description": "Aggiorna le scadenze delle righe presenti quando cambiano le date.",
+      "role": "section",
+      "position": "top"
+    },
+    {
+      "name": "ConfermaRegistrazioneSentenza",
+      "title": "Registrazione con scadenza automatica",
+      "description": "Calcola la scadenza prima dell'inserimento e aggiunge la sentenza direttamente al registro.",
+      "role": "confirm",
+      "pageId": "nuova-sentenza",
+      "events": [
+        "add"
+      ]
+    }
+  ]
 }
